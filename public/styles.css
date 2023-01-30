@@ -15,7 +15,15 @@ body {
     padding: 0;
     background-color: var(--var-color-2);
     /* height: 100vh; */
+    max-height: 2800px;
+}
+
+home-body {
     height: 2800px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
 }
 
 a {
@@ -34,23 +42,23 @@ a {
     background-color: var(--var-color-2);
 }
 
-clr-dark-pink {
+.clr-dark-pink {
     background-color: var(--var-color-1);
 }
 
 .home-container-1x {
-    height: 100%;
-    width: 100%;
-    margin: 0;
+    /* height: 100%; */
+    width: 92%;
     padding: 0;
+    padding-left: 8%;
+    position: absolute;
+    z-index: 50;
 }
 
 .home-container-2x {
     width: 80%;
-    padding: 0;
-    padding-left: 10%;
-    padding-top: 4%;
-    position: absolute;
+    padding-top: 3%;
+    /* position: absolute; */
     z-index: 15;
     display: flex;
     flex-flow: column;
@@ -58,34 +66,35 @@ clr-dark-pink {
 
 .main-page-title {
     font-weight: bolder;
-    font-size: 9rem;
+    font-size: 6rem;
     color: var(--var-color-4);
     width: 100%;
     text-shadow: 1px 1px 5px black;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     line-height: 1.2;
     transition: all 0.4s ease-out;
     cursor: pointer;
 }
 
 .main-page-title:hover {
-    font-size: 9.4rem;
+    font-size: 6.4rem;
     transition: all 0.4s ease;
 }
 
 .home-bttn {
+    z-index: 70;
     border-radius: 10px;
-    width: 400px;
-    height: 70px;
+    width: 360px;
+    height: 60px;
     display: flex;
     justify-content: center;
     place-items: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5em;
     color: var(--var-color-1);
     box-shadow: 1px 1px 10px black;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     /* -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -97,8 +106,8 @@ a div:hover {
     background-color: var(--var-color-1);
     color: var(--var-color-4);
     transition-duration: 0.5s;
-    height: 90px;
-    width: 420px;
+    height: 76px;
+    width: 400px;
     /* -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
@@ -109,12 +118,14 @@ a div:hover {
 .casino-machine-super-container {
     /* width: 500px;
     height: 1000px; */
-    width: 100%;
+    /* width: 100%; */
+    width: 1500px;
     height: 2800px;
     display: flex;
     flex-flow: column;
     position: absolute;
     top: 0;
+    margin: auto;
 }
 
 .casino-machine-upper-container {
@@ -126,6 +137,9 @@ a div:hover {
 .casino-machine-lower-container {
     width: 100%;
     height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .casino-machine-light-pink-cropped {
@@ -142,6 +156,58 @@ a div:hover {
     width: 30%;
 }
 
+.game-lever {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+}
+
+.lever-axis {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    top: 800px;
+    left: 900px;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px black;
+}
+
+.lever-arm-master {
+    position: absolute;
+
+    box-shadow: 3px 3px 15px black;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.lever-arm-one {
+    width: 100px;
+    height: 800px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 430px;
+    left: 870px;
+}
+
+.lever-arm-two {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1060px;
+    left: 1150px;
+}
+
+.lever-hold {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    left: 540px;
+    box-shadow: 1px 1px 10px black;
+}
+
 input, button {
     font-family: inherit;
     font-size: inherit;
@@ -150,10 +216,9 @@ input, button {
 .game-instructions {
     margin-top: 400px;
     width: 60%;
-    margin-left: 20%;
     line-height: 1.5;
     color: var(--var-color-4);
-    font-size: 2.6em;
+    font-size: 1.9em;
     font-weight: bolder;
     text-shadow: 1px 1px 5px black;
 }
@@ -161,6 +226,8 @@ input, button {
 .go-back {
     text-shadow: none;
     margin: auto;
+    margin-top: 70px;
+    font-size: inherit;
 }
 
 .contribute-site {
@@ -169,6 +236,13 @@ input, button {
 
 .contribute-site input, button {
     margin-bottom: 35px;
+}
+
+.game-machine-super-container {
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    height: 100vh;
 }
 
 footer {
@@ -182,12 +256,19 @@ footer {
 
 .footer-container {
     width: 100%;
-    height: 70px;
+    height: 55px;
     position: fixed;
     bottom: 0;
     display: flex;
     justify-content: center;
     place-items: center;
     box-shadow: 1px 1px 10px black;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.footer-container:hover {
+    height: 70px;
+    transition: all 0.4s;
 }
 

@@ -46,10 +46,6 @@ app.get("/contributeToGame", function(req, res) {
     res.render("contribute")
 });
 
-app.get("/instructions", function(req, res) {
-    res.render("instructions")
-});
-
 app.post("/playGame", function(req, res) {
     res.render("gameScreen")
 })
