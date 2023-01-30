@@ -1,0 +1,193 @@
+:root {
+    --var-color-1: #bb1350;
+    --var-color-2: #FF3D83;
+    --var-color-3: #FE92B9;
+    --var-color-4: #F5F5F5;
+}
+
+html {
+    font-family: 'Grandstander', cursive;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--var-color-2);
+    /* height: 100vh; */
+    height: 2800px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr-white {
+    background-color: var(--var-color-4);
+}
+
+.clr-light-pink {
+    background-color: var(--var-color-3);
+}
+
+.clr-pink {
+    background-color: var(--var-color-2);
+}
+
+clr-dark-pink {
+    background-color: var(--var-color-1);
+}
+
+.home-container-1x {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container-2x {
+    width: 80%;
+    padding: 0;
+    padding-left: 10%;
+    padding-top: 4%;
+    position: absolute;
+    z-index: 15;
+    display: flex;
+    flex-flow: column;
+}
+
+.main-page-title {
+    font-weight: bolder;
+    font-size: 9rem;
+    color: var(--var-color-4);
+    width: 100%;
+    text-shadow: 1px 1px 5px black;
+    margin: 0;
+    margin-bottom: 60px;
+    line-height: 1.2;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+.main-page-title:hover {
+    font-size: 9.4rem;
+    transition: all 0.4s ease;
+}
+
+.home-bttn {
+    border-radius: 10px;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--var-color-1);
+    box-shadow: 1px 1px 10px black;
+    margin-bottom: 30px;
+    /* -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out; */
+    transition: all 0.4s ease-out;
+}
+
+a div:hover {
+    background-color: var(--var-color-1);
+    color: var(--var-color-4);
+    transition-duration: 0.5s;
+    height: 90px;
+    width: 420px;
+    /* -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease; */
+    transition: all 0.4s ease;
+}
+
+.casino-machine-super-container {
+    /* width: 500px;
+    height: 1000px; */
+    width: 100%;
+    height: 2800px;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 0;
+}
+
+.casino-machine-upper-container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.casino-machine-lower-container {
+    width: 100%;
+    height: 60%;
+}
+
+.casino-machine-light-pink-cropped {
+    width: 70%;
+}
+
+.casino-machine-pink-cropped {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 99%;
+}
+
+.casino-machine-light-pink-rect {
+    width: 30%;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.game-instructions {
+    margin-top: 400px;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 1.5;
+    color: var(--var-color-4);
+    font-size: 2.6em;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px black;
+}
+
+.go-back {
+    text-shadow: none;
+    margin: auto;
+}
+
+.contribute-site {
+    font-size: 4rem;
+}
+
+.contribute-site input, button {
+    margin-bottom: 35px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    color: var(--var-color-1);
+    font-weight: bold;
+    font-size: 1.5rem;
+    z-index: 50;
+}
+
+.footer-container {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    box-shadow: 1px 1px 10px black;
+}
+

@@ -1,0 +1,22 @@
+<%- include("partial/header") -%> 
+    <div class="contribute-site">
+        <form action="/contributeToGame" method="post">
+            <label for="entry">Write in your entry!</label>
+            <input type="text" name="entry" id="entry" autocomplete="off" placeholder="Write your entry here..."><br>
+            
+            <input type="radio" name="category" id="bad" value=1>
+            <label for="bad">Ew!</label><br>
+            <input type="radio" name="category" id="neutral" value=2>
+            <label for="neutral">Eh...</label><br>
+            <input type="radio" name="category" id="good" value=3>
+            <label for="good">Wow!</label><br>
+    
+            <label for="submitter">(optional) Write in your name or a nickname to be credited!</label>
+            <input type="text" name="submitter" id="" autocomplete="off"><br>
+            <button type="submit">Submit!</button>
+        </form>
+    </div>
+    
+    <%- include("partial/footer") -%>     
+
+
